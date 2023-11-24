@@ -28,6 +28,6 @@ class ransomware_live_api_wrapper:
 		response = requests.get(self.base+'/recentvictims')
 		return response.json()
 
-	def victims(self,year, month):
+	def victims(self,year,month):
 		response = requests.get(self.base+'/victims/{0}/{1}'.format(year,month))
 		return response.json()
